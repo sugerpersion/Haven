@@ -2,6 +2,42 @@
 <resources>
     <string name="app_name">Haven</string>
 
+Couldn't fetch the current file. Open it on GitHub and apply your edits by hand:
+{
+  "battery_message": "Android 可能会为省电而关闭后台 SSH 连接。为 Haven 禁用电池优化可以有效减少此情况",
+  "workspace_empty_hint": "打开你想一起绑定的会话,然后点击保存当前会话，下次一键即可重新打开全部。",
+  "workspace_save_dialog_title": "以工作区保存",
+  "workspace_delete_confirm_title": "你删除工作区吗?",
+  "workspace_delete_confirm_message": "\"%1$s\" 将被删除。它引用的连接会保持不变",
+  "app_biometric_blocked_no_activity_body": "无法在此环境下显示身份验证提示。",
+  "app_biometric_not_enrolled_body": "Haven 应用锁已启用，但此设备未设置屏幕锁定或录入生物识别。请在设备“设置-安全-设置密码”中设置一项以解锁。",
+  "app_desktop_manager_description": "在 Haven 内运行完整的 Linux 桌面。选择发行版，安装桌面环境（Xfce4、Openbox 或 Sway），然后点击启动即可——无需单独的服务器或连接。",
+  "app_desktop_mirror_title": "安装包源",
+  "app_desktop_mirror_description": "你从哪里下载linux依赖，这会加快你下载linux依赖的速度，更加信任，默认是官方源",
+  "app_desktop_mirror_default": "默认(官方源)",
+  "app_desktop_mirror_europe": "欧洲",
+  "app_desktop_mirror_asia": "亚洲",
+  "app_desktop_mirror_americas": "美国",
+  "app_desktop_app_windows_description": "在当前屏幕的浮动窗口中启动指定应用。已安装的应用在活动的 Linux 发行版中运行",
+  "app_desktop_app_windows_empty": "暂无应用窗口,请添加一个活动窗口以启动",
+  "app_desktop_open_terminal_cd": "在%1$s中打开终端",
+  "app_desktop_installed_apps_empty": "在当前发行版中未安装桌面",
+  "app_desktop_installed_app_fullscreen_on_cd": "%1$s 以全屏打开——点击以切换成窗口模式",
+  "app_desktop_installed_app_fullscreen_off_cd": "%1$s 以窗口模式打开——点击以切换全屏模式",
+  "app_desktop_app_window_run_as_root": "以root身份运行",
+  "app_desktop_rootfs_initializing": "正在准备 rootfs… (%1$s)",
+  "app_desktop_phase_bootstrap_hook": "引导 hook",
+  "app_desktop_phase_baseline": "linux基本包",
+  "app_desktop_proot_log_hint": "完整历史：设置 → 查看 PRoot 安装日志。",
+  "app_desktop_vnc_port_range": "可取 5901–5999",
+  "app_desktop_sessions_cd": "进程",
+  "app_agent_pair_title": "确定要配对 MCP 客户端吗？",
+  "app_present_app_missing_details": "应用窗口丢失连接内容",
+  "agent_summary_sessions": "%1$d 个进程",
+  "agent_summary_pf_removed_deactivated": "已停用并移除",
+  "agent_summary_reused_existing": "重用使用已有的"
+}
+
 
     <!-- Common strings shared across modules -->
     <string name="common_cancel">取消</string>
