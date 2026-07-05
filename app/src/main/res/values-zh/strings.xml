@@ -34,13 +34,13 @@
     <string name="common_unlock">解锁</string>
 
     <!-- Battery optimization -->
-    <string name="battery_title">保持连接？</string>
+    <string name="battery_title">要保持连接吗？</string>
     <string name="battery_message">Android 可能会为省电而关闭后台 SSH 连接。为 Haven 禁用电池优化可以防止此情况。</string>
 
     <!-- Workspace profiles -->
     <string name="workspace_section_title">工作区</string>
     <string name="workspace_save_current">保存当前…</string>
-    <string name="workspace_empty_hint">打开你想一起绑定的会话,然后点击保存当前。下次一键即可全部重新打开。</string>
+    <string name="workspace_empty_hint">打开你想一起绑定的会话,然后点击保存当前会话。下次一键即可全部重新打开。</string>
     <string name="workspace_save_dialog_title">另存为工作区</string>
     <string name="workspace_save_dialog_name_label">名称</string>
     <string name="workspace_save_dialog_items_label">要包含的项目</string>
@@ -105,7 +105,7 @@
     <string name="app_desktop_experimental_on">%1$s（实验性）</string>
     <string name="app_desktop_vnc_port_label">VNC 端口</string>
     <string name="app_desktop_vnc_display">显示器 :%1$d</string>
-    <string name="app_desktop_vnc_port_range">范围 5901–5999</string>
+    <string name="app_desktop_vnc_port_range">范围 :5901–5999</string>
     <string name="app_desktop_phase_packages">软件包</string>
     <string name="app_desktop_phase_vnc_config">VNC 配置</string>
     <string name="app_desktop_phase_marker">标记文件</string>
@@ -116,12 +116,12 @@
     <string name="app_desktop_tab_label">%1$s %2$s</string>
     <string name="app_desktop_move_tab_left_cd">左移</string>
     <string name="app_desktop_move_tab_right_cd">右移</string>
-    <string name="app_agent_pair_title">配对 MCP 客户端？</string>
+    <string name="app_agent_pair_title">要配对 MCP 客户端吗？</string>
     <string name="app_agent_action_requested">代理操作请求</string>
     <string name="app_agent_from_client">来自：%1$s</string>
     <string name="app_agent_tool">工具：%1$s</string>
     <string name="app_agent_bypass_label">在 Haven 重启前允许来自 \'%1$s\' 的所有 MCP 请求</string>
-    <string name="app_agent_bypass_description">包括破坏性操作（终端输入、文件写入/删除、APK 安装）。应用退出后清除。</string>
+    <string name="app_agent_bypass_description">包括破坏性操作（终端输入、文件写入/删除、APK 安装）。应用退出后会挂掉比操作</string>
     <string name="app_agent_auto_allow_window">自动允许窗口：</string>
     <string name="app_agent_minutes">%1$d 分钟</string>
     <string name="app_agent_allow_for_minutes">允许 %1$d 分钟</string>
@@ -131,7 +131,7 @@
     <string name="app_present_image_shared_cd">代理分享的图片</string>
     <string name="app_present_pause">暂停</string>
     <string name="app_present_play">播放</string>
-    <string name="app_present_preparing_audio">正在准备音频…</string>
+    <string name="app_present_preparing_audio">正在准备音频服务…</string>
 
     <!-- i18n sweep #210 (follow-up batch) -->
     <string name="app_biometric_blocked_no_activity_title">Haven 已锁定</string>
@@ -160,7 +160,7 @@
     <string name="app_desktop_installed_app_fullscreen_on_cd">%1$s 以全屏打开——点击切换为窗口模式</string>
     <string name="app_desktop_installed_app_fullscreen_off_cd">%1$s 以窗口模式打开——点击切换为全屏</string>
     <string name="app_desktop_app_window_fullscreen">以全屏打开</string>
-    <string name="app_desktop_app_window_run_as_root">以 root 运行</string>
+    <string name="app_desktop_app_window_run_as_root">以 root 身份运行</string>
     <string name="app_desktop_app_window_run_as_root_hint">用于包管理器和系统工具（会安装 fakeroot）</string>
     <string name="app_desktop_app_window_resolution">分辨率</string>
     <string name="app_desktop_app_window_scale">缩放</string>
@@ -215,7 +215,7 @@
     <string name="app_desktop_share_storage_title">与客机共享设备存储</string>
     <string name="app_desktop_share_storage_description">将共享存储挂载到客机的 /storage 和 /sdcard，使其可以访问您的文件。关闭后，本地 Linux 环境将无法看到您的照片和下载内容。</string>
     <string name="app_desktop_bind_android_system_title">向客机暴露 Android 系统</string>
-    <string name="app_desktop_bind_android_system_description">将 Android 只读的 /system、/vendor、/apex 及相关分区挂载到客机，使其可运行 Android 自带的原生程序（如 getprop、toybox）。默认关闭：这会将设备和厂商内部信息暴露给本地 Linux 环境。</string>
+    <string name="app_desktop_bind_android_system_description">将 Android 只读的 /system、/vendor、/apex 及相关分区挂载到内部客机或容器，使其可运行 Android 自带的原生程序（如 getprop、toybox）默认状态为关闭：这会将设备和厂商内部信息暴露给本地 Linux 环境。</string>
     <string name="app_desktop_custom_binds_title">自定义挂载（%1$d）</string>
     <string name="app_desktop_custom_binds_description">在系统挂载之外，向此发行版的客机暴露额外的 Android 路径。挂载为可读写。</string>
     <string name="app_desktop_custom_binds_dialog_title">自定义挂载 — %1$s</string>
@@ -232,18 +232,18 @@
     <string name="app_desktop_open_usb_drive_writable_confirm_title">以读写方式挂载？</string>
     <string name="app_desktop_open_usb_drive_writable_confirm_body">这会以读写方式挂载该驱动器。如果 VM 在写入过程中断电（被终止、崩溃、拔出电池），文件系统可能损坏。只读是更安全的默认选择。</string>
     <string name="app_desktop_eject_usb_drive">弹出 USB 驱动器</string>
-    <string name="app_desktop_delete_usb_appliance">删除 USB 辅助 Linux</string>
+    <string name="app_desktop_delete_usb_appliance">删除 Linux USB驱动</string>
     <string name="app_desktop_usb_drive_progress">USB 驱动器：%1$s</string>
     <string name="app_desktop_usb_drive_locked">%1$s 已锁定（LUKS）</string>
     <string name="app_desktop_usb_drive_unlock">解锁…</string>
     <string name="app_desktop_usb_drive_unlock_title">解锁 %1$s</string>
-    <string name="app_desktop_usb_drive_unlock_passphrase">密码短语</string>
+    <string name="app_desktop_usb_drive_unlock_passphrase">密码谜语</string>
     <string name="app_desktop_import_dialog_title">导入 rootfs</string>
     <string name="app_desktop_import_description">使用您自己的 rootfs 压缩包（.tar.gz 或 .tar.xz）——可以是 proot-distro 镜像、Docker 导出，或已有发行版的第二份副本。将按原样使用（不安装任何软件包）。</string>
-    <string name="app_desktop_import_id_hint">发行版 ID（短标识，如 ubuntu-test）</string>
-    <string name="app_desktop_import_label_hint">标签（如 Ubuntu 26.04 imported）</string>
+    <string name="app_desktop_import_id_hint">发行版 ID（短命名，如 ubuntu-test）</string>
+    <string name="app_desktop_import_label_hint">标签（如 Ubuntu 26.04 已导入）</string>
     <string name="app_desktop_import_source_hint">压缩包 URL（https://…）</string>
-    <string name="app_desktop_import_family">软件包体系</string>
+    <string name="app_desktop_import_family">软件包属</string>
     <string name="app_desktop_import_confirm">导入</string>
     <string name="app_desktop_cancel">取消</string>
     <string name="app_desktop_save">保存</string>
