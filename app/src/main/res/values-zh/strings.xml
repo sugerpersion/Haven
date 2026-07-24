@@ -291,4 +291,11 @@
     <string name="tasker_watch_title">查看 %1$s</string>
     <string name="tasker_watch_text">点按以在实时终端中运行 %1$s</string>
     <string name="tasker_insert_variable">插入变量</string>
+    <string name="app_desktop_dns_title">宿主机DNS</string>
+    <string name="app_desktop_dns_mode_system">网络模式(DHCP)</string>
+    <string name="app_desktop_dns_mode_public">公开服务器(Google + Cloudflare)</string>
+    <string name="app_desktop_dns_mode_custom">自定义</string>
+    <string name="app_desktop_dns_custom_label">命名服务</string>
+    <string name="app_desktop_dns_custom_hint">例如 10.0.0.53, 1.1.1.1</string>
+    <string name="app_desktop_dns_description">本地 Linux 客户端使用的名称服务器。如果在这个网络上安装软件包时出现卡顿，可能是因为公共 DNS 被阻止——使用网络自带的解析器。</string>
 </resources>
